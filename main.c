@@ -2,7 +2,7 @@
 
 extern void print_tls_var();
 
-__thread int tls_var;
+extern __thread int tls_var;
 
 int main(int argc, char *argv[]) {
   printf("%p\n", &tls_var);
